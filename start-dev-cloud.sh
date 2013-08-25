@@ -6,7 +6,7 @@ killall node
 slnode debug app.js &
 
 #start the node-mirror IDE
-node node_modules/node-mirror/bin/nodeMirror.js --port 3000 --dir /home/sol/projects --username matt --password matt &
+node node_modules/node-mirror/bin/nodeMirror.js --port 3001 --dir . --username matt --password matt &
 
 #open broswer windows
 echo "open your browser window to"
