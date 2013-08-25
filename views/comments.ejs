@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>fib</title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <h1>fib</h1>
+    <p> Current Cache List </p>
+    
+    <% if (fibCacheInstance) { %>
+    <h2> Cache Size <%= fibCacheInstance.cacheObject.length %></h2>
+	<% } %>
+    
+    <ul>
+	<% for(var i=0; i<fibCacheInstance.cacheObject.length; i++) {%>
+   	<li><%= fibCacheInstance.cacheObject[i] %></li>
+	<% } %>
+	</ul>
+    
+     new EJS({url: 'comments.ejs'}).update('element_id', '/comments.json')
+      
+      
+      
+  </body>
+</html>
